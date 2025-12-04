@@ -1,0 +1,15 @@
+Dataset we use to train our modal are:
+
+1) Source 1 (Alfred Weber Institute of Economics, Roboflow)
+     (https://universe.roboflow.com/alfred-weber-institute-of-economics/custom-workflow-object-detection-tgnqc/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true)
+   1. z18_183245_103850.png
+    
+2) Source 2 (LSGI547 Project, Roboflow)
+(https://universe.roboflow.com/projectsolarpanel/lsgi547-project/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true)
+
+1.tile_img_10_12.png
+2.tile_img_10_14.png
+3) Source 3 (Piscinas Y Tenistable, Roboflow)
+(https://universe.roboflow.com/piscinas-y-tenistable/solar-panels-ba8ty)
+1.sp0252.png
+2.sp0512_png
