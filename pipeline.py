@@ -3,8 +3,8 @@ import requests
 import json
 import os
 from PIL import Image           #for image manipulation(If needed)
-#import pytorch                  #import ml_modal present in your libary eg. tensorflow, pytorch
-#from shapely.geometry import Point, Polygon    #for geometry calculation
+import pytorch                  #import ml_modal present in your libary eg. tensorflow, pytorch
+from shapely.geometry import Point, Polygon    #for geometry calculation
 GOOGLE_STATIC_API_KEY=str(input("enter your static API key"))
 image_size="600x600"               #image dimension for the API call(in pixels)
 zoom_level=19                    #a good zoom level for rooftop detail
@@ -53,8 +53,8 @@ def run_pv_inference(image_path, lat,lon):
         In a real scenario, this loads the trained model and performs PV detection.
         Return: (is_pv_present, pv_area_sq_m, detection_mask, confidence, qc_status)"""
                 # load model(mock implementation)
-    #model= pytorch.load_model('pv_detector.h5')
-    #img= image.open(image_path).convert('RGB')
+    model= pytorch.load_model('pv_detector.h5')
+    img= image.open(image_path).convert('RGB')
                 #Preprocess image and run inference
                 
                 #Mock Result: simulate model output
@@ -156,9 +156,9 @@ def process_pv_detection(input_file_path, output_folder_path):
 
 #----EXECUTION EXAMPLE
 # set your input and output paths
-#input_file="path/to/your/samples.xlsx"          
-#output_dir= "path/to/your/output_artifacts"
-#process_pv_detection(input_file,output_dir)
+input_file="path/to/your/samples.xlsx"          
+output_dir= "path/to/your/output_artifacts"
+process_pv_detection(input_file,output_dir)
 
 
 
@@ -166,3 +166,4 @@ def process_pv_detection(input_file_path, output_folder_path):
                                                 
 
          
+
