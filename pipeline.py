@@ -154,7 +154,7 @@ def process_pv_detection(input_file_path, output_folder_path):
         json.dump(result_list,f,indent=4)
     print(f"summary saved to {summary_path}")
 
-#----EXECUTION EXAMPLE
+#----EXECUTION EXAMPLE--------
 # set your input and output paths
 input_file="path/to/your/samples.xlsx"          
 output_dir= "path/to/your/output_artifacts"
@@ -166,4 +166,5 @@ process_pv_detection(input_file,output_dir)
                                                 
 
          
+
 
